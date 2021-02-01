@@ -1,2 +1,1 @@
-# iOSDev
-KBTU iOS Development Class. Spring 2021
+## KBTU iOS Development Class. Spring 2021
