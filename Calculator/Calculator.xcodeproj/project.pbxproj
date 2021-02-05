@@ -13,6 +13,7 @@
 		B9BD441C25C7BE9A00622805 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9BD441A25C7BE9A00622805 /* Main.storyboard */; };
 		B9BD441E25C7BE9C00622805 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9BD441D25C7BE9C00622805 /* Assets.xcassets */; };
 		B9BD442125C7BE9D00622805 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9BD441F25C7BE9D00622805 /* LaunchScreen.storyboard */; };
+		B9C85EDA25CCF367007F199D /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C85ED925CCF367007F199D /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		B9BD442025C7BE9D00622805 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B9BD442225C7BE9D00622805 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B9BD442925C7C37200622805 /* Playground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Playground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		B9C85ED925CCF367007F199D /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 			children = (
 				B9BD441425C7BE9A00622805 /* AppDelegate.swift */,
 				B9BD441625C7BE9A00622805 /* SceneDelegate.swift */,
+				B9C85ED925CCF367007F199D /* Model.swift */,
 				B9BD441825C7BE9A00622805 /* ViewController.swift */,
 				B9BD441A25C7BE9A00622805 /* Main.storyboard */,
 				B9BD441D25C7BE9C00622805 /* Assets.xcassets */,
@@ -142,6 +145,7 @@
 				B9BD441925C7BE9A00622805 /* ViewController.swift in Sources */,
 				B9BD441525C7BE9A00622805 /* AppDelegate.swift in Sources */,
 				B9BD441725C7BE9A00622805 /* SceneDelegate.swift in Sources */,
+				B9C85EDA25CCF367007F199D /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
