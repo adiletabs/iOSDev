@@ -21,7 +21,18 @@ class Pen: Shape {
         points.append(point)
     }
     
+    func removeLast() {
+        points.removeLast()
+    }
+    
+    func isEmpty() -> Bool {
+        return points.isEmpty
+    }
+    
     func drawPath() {
+        if points.isEmpty {
+            return
+        }
         let path = UIBezierPath()
         path.move(to: points[0])
         for i in 1..<points.count {

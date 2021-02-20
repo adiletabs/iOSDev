@@ -103,12 +103,15 @@ class MainModel {
     
     func removeLast() {
         if !shapes.isEmpty {
+            let lastShape = shapes.last
             shapes.removeLast()
+            if let pen = lastShape as? Pen {
+                if !pen.isEmpty() {
+                    pen.removeLast()
+                    shapes.append(pen)
+                }
+            }
         }
-    }
-    
-    func clear() {
-        shapes.removeAll()
     }
 }
 
