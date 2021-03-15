@@ -20,15 +20,18 @@
                             <rect key="frame" x="0.0" y="0.0" width="420" height="44"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                             <items>
-                                <barButtonItem title="List" id="VGa-MS-sUd">
-                                    <connections>
-                                        <action selector="showList:" destination="uOD-5r-g5w" id="aL3-1O-rHf"/>
-                                    </connections>
-                                </barButtonItem>
-                                <barButtonItem title="Favourite" id="40a-qA-Fye">
-                                    <connections>
-                                        <action selector="showFavourite:" destination="uOD-5r-g5w" id="Owf-n0-pko"/>
-                                    </connections>
+                                <barButtonItem style="plain" id="a9k-Q2-UTB">
+                                    <segmentedControl key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="bo2-q1-C3i">
+                                        <rect key="frame" x="116" y="5.5" width="288" height="33"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <segments>
+                                            <segment title="List"/>
+                                            <segment title="Favourite"/>
+                                        </segments>
+                                        <connections>
+                                            <action selector="showList:" destination="uOD-5r-g5w" eventType="valueChanged" id="nge-b2-Dx9"/>
+                                        </connections>
+                                    </segmentedControl>
                                 </barButtonItem>
                             </items>
                         </toolbar>
@@ -54,10 +57,6 @@
                                 </connections>
                             </tableViewCell>
                         </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="uOD-5r-g5w" id="qhq-hv-oXs"/>
-                            <outlet property="delegate" destination="uOD-5r-g5w" id="hgW-3d-c60"/>
-                        </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="TTH-zM-n8A">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="f5q-Ui-UVa">

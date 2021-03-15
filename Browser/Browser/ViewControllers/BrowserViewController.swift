@@ -53,14 +53,8 @@ class BrowserVC: UITableViewController {
         self.present(alert, animated: true)
     }
     
-    @IBAction func showList(_ sender: UIBarButtonItem) {
-        browserModel.showAll()
+    @IBAction func showList(_ sender: UISegmentedControl) {
+        sender.selectedSegmentIndex == 0 ? browserModel.showAll() : browserModel.showFavourites()
         tableView.reloadData()
     }
-    
-    @IBAction func showFavourite(_ sender: UIBarButtonItem) {
-        browserModel.showFavourites()
-        tableView.reloadData()
-    }
-    
 }
